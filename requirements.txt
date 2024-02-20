@@ -1,0 +1,11 @@
+line-bot-sdk==3.5.0
+fastapi
+uvicorn[standard]
+yfinance
+pydantic
+tiktoken
+langchain_community
+langchain_openai
+langchain_core
+faiss-cpu
+langchain

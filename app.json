@@ -1,0 +1,36 @@
+{
+  "name": "linebot github issue rag",
+  "description": "Quick LINEBot with Langchain",
+  "repository": "https://github.com/kkdai/linebot-github-issue-rag",
+  "keywords": [
+    "python",
+    "linebot",
+    "langchain"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "OpenAI Access Token",
+      "required": true
+    },
+    "ChannelAccessToken": {
+      "description": "Channel Access Token",
+      "required": true
+    },
+    "ChannelSecret": {
+      "description": "Channel Secret",
+      "required": true
+    },
+    "GITHUB_TOKEN": {
+      "description": "GITHUB TOKEN",
+      "required": true
+    }
+  }
+}
